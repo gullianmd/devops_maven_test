@@ -48,4 +48,14 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>no-gpg-signing</id>
+      <properties>
+        <gpg.skip>true</gpg.skip>
+      </properties>
+    </profile>
+  </profiles>
+
 </project>
