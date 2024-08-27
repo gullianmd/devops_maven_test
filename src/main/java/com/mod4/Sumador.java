@@ -9,10 +9,11 @@ package com.mod4;
  * @author gmard
  */
 public class Sumador {
-    static void sumaValores(int a, int b){
+    static int sumaValores(int a, int b){
         
         int res = a+b;
         String resultado = String.format("la suma de %d y %d es %d", a, b, res);
         System.out.println(resultado);
+        return res;
     }
 }

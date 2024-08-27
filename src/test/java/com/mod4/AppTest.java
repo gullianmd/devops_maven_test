@@ -23,20 +23,13 @@ public class AppTest
     
     @Test
     public void testSumaValores() {
-        // Configurar para capturar la salida del sistema
-        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-        PrintStream originalOut = System.out;
-        System.setOut(new PrintStream(outContent));
-
+        
         // Llamar al método que queremos probar
-        Sumador.sumaValores(3, 7);
-
-        // Restaurar la salida original del sistema
-        System.setOut(originalOut);
+        int res = Sumador.sumaValores(3, 7);
 
         // Verificar que la salida es la esperada
-        String expectedOutput = "la suma de 3 y 7 es 10\r\n";
+        int expectedOutput = 10;
         
-        Assert.assertEquals(expectedOutput, outContent.toString());
+        Assert.assertEquals(res, expectedOutput);
     }
 }

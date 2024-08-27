@@ -8,6 +8,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Iniciando suma..." );
-        Sumador.sumaValores(1, 2);
+        int resultado = Sumador.sumaValores(1, 2);
+        System.out.println("Suma terminada...");
     }
 }
